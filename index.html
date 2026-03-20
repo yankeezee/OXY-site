@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Система автоматического регулирования кислородной терапии: дистанционный мониторинг и PID-регулирование по SpO2." />
+    <meta name="description" content="Система автоматического регулирования кислородной терапии: дистанционный мониторинг и автоматическая поддержка целевого диапазона сатурации." />
     <title>Оксигенотерапия под контролем: автоматическое регулирование</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -13,10 +13,10 @@
     <header class="site-header">
       <div class="container header-inner">
         <div class="brand">
-          <img class="brand-mark" src="assets/oxy-logo.png" alt="Логотип OXY" width="42" height="42" />
+          <img class="brand-mark" src="assets/oxy-logo.png" alt="Логотип ОКСИ" width="42" height="42" />
           <div>
             <div class="brand-title">Автоматическое регулирование кислородной терапии</div>
-            <div class="brand-subtitle">ПАК + мониторинг SpO₂ с PID-регуляцией</div>
+            <div class="brand-subtitle">ПАК для автоматизации подачи кислорода и дистанционного мониторинга</div>
           </div>
         </div>
 
@@ -50,8 +50,9 @@
           <div>
             <h1>Система автоматического регулирования кислородной терапии</h1>
             <p class="lead">
-              Проект для автоматизации подачи кислорода и дистанционного мониторинга пациентов на основе текущих значений SpO₂
-              и PID-алгоритма управления.
+              В реальной практике корректировка подачи кислорода часто требует ручного мониторинга сатурации и быстрых решений.
+              ОКСИ автоматизирует подачу кислорода и дистанционный мониторинг пациентов на основе текущих значений SpO₂,
+              снижая нагрузку на персонал и риск ошибок дозирования.
             </p>
             <div class="hero-cta">
               <a class="btn" href="#about">Подробнее</a>
@@ -61,10 +62,10 @@
           <div class="hero-card" role="group" aria-label="Коротко о решении">
             <div class="hero-card-title">Что вы получаете</div>
             <ul class="checklist">
-              <li>Замкнутый контур регулирования по SpO₂</li>
-              <li>Плавная настройка подачи кислорода через регулятор</li>
-              <li>Онлайн-обзор показателей группы пациентов</li>
-              <li>Уведомления и дистанционное управление</li>
+              <li>Автоматический контроль подачи кислорода по текущим показателям пациента</li>
+              <li>Плавная настройка потока через электромеханический регулятор</li>
+              <li>Онлайн-обзор динамики пациентов и ключевых метрик</li>
+              <li>Уведомления и дистанционное управление параметрами</li>
             </ul>
             <div class="hero-mini">
               <div class="hero-mini-item">
@@ -72,8 +73,8 @@
                 <div class="kpi-label">целевой диапазон поддерживается автоматически</div>
               </div>
               <div class="hero-mini-item">
-                <div class="kpi">PID</div>
-                <div class="kpi-label">управление в ответ на физиологию</div>
+                <div class="kpi">Безопасность</div>
+                <div class="kpi-label">ограничения и контроль режимов</div>
               </div>
             </div>
           </div>
@@ -140,10 +141,10 @@
         <h2>Как это работает</h2>
         <div class="two-col">
           <div>
-            <h3>PID-регуляция по SpO₂</h3>
+            <h3>Замкнутый контур управления по целевому диапазону</h3>
             <p>
-              Система вычисляет управляющее воздействие на основе текущей сатурации, заданной целевой зоны и параметров PID.
-              Это позволяет динамически подстраивать поток кислорода и поддерживать целевые значения без постоянного ручного контроля.
+              Система сравнивает текущие значения сатурации с заданной целевой зоной и формирует управляющее воздействие на подачу кислорода.
+              За счет работы в замкнутом цикле сокращается необходимость ручных корректировок и повышается устойчивость процесса.
             </p>
           </div>
           <div>
@@ -169,7 +170,7 @@
             <ul class="bullets">
               <li>Собран действующий прототип регулятора (габариты: 28 × 12 × 7 см).</li>
               <li>Разработано веб-приложение на Flutter.</li>
-              <li>Реализован базовый PID-алгоритм регулирования по SpO₂.</li>
+              <li>Реализован базовый алгоритм автоматического управления подачей кислорода по показателям пациента.</li>
             </ul>
           </div>
           <div class="list-card">
@@ -196,16 +197,16 @@
           </p>
           <div class="media-grid">
             <figure class="media-figure branded-media">
-              <img class="media-img" src="assets/placeholder-photo.svg" alt="Пример фото прототипа (замените на реальное фото)" />
-              <figcaption class="media-caption">Прототип устройства (замените на реальное фото)</figcaption>
+              <img class="media-img" src="assets/project-photo.jpg" alt="Прототип устройства" />
+              <figcaption class="media-caption">Прототип устройства</figcaption>
               <div class="media-watermark" aria-hidden="true">
                 <img src="assets/logo-fii.png" alt="" />
                 <img src="assets/logo-technologies-platform.png" alt="" />
               </div>
             </figure>
             <figure class="media-figure branded-media">
-              <img class="media-img" src="assets/placeholder-photo.svg" alt="Пример фото команды (замените на реальное фото)" />
-              <figcaption class="media-caption">Команда проекта (замените на реальное фото)</figcaption>
+              <img class="media-img" src="assets/team-photo.jpg" alt="Команда проекта" />
+              <figcaption class="media-caption">Команда проекта</figcaption>
               <div class="media-watermark" aria-hidden="true">
                 <img src="assets/logo-fii.png" alt="" />
                 <img src="assets/logo-technologies-platform.png" alt="" />
@@ -311,7 +312,7 @@
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <div>© <span id="year"></span> OXY — кислородная терапия под контролем</div>
+        <div>© <span id="year"></span> ОКСИ — кислородная терапия под контролем</div>
         <div class="footer-links">
           <a href="#support">Поддержка</a>
           <a href="#about">Продукт</a>
